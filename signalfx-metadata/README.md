@@ -59,7 +59,7 @@ Directions for finding your token:
 | configuration option | definition | default value |
 | ---------------------|------------|---------------|
 | ModulePath | Path on disk where collectd can find this module. | "/opt/signalfx-collectd-plugin" |
-| URL | URL for where metrics are sent from collectd. If you are looking to limit the number of connections from your infrastructure to the SignalFx service you can optioally configure the use of the [SignalFx metricproxy](https://github.com/signalfx/integrations/tree/master/metricproxy) | "https://ingest.signalfx.com/v1/collectd" |
+| URL | URL for where metrics are sent from collectd. If you are looking to limit the number of connections from your infrastructure to the SignalFx service you can optionally configure the use of the [SignalFx Gateway](https://github.com/signalfx/integrations/tree/master/metricproxy) | "https://ingest.signalfx.com/v1/collectd" |
 | Token | API token for your SignalFx org | none |
 | LogTraces | Enable log traces | true |
 | Notifications | Enable notification on this plugin | true |
