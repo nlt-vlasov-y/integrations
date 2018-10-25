@@ -10,48 +10,11 @@
 
 ### DESCRIPTION
 
-<a target="_blank" href="https://www.conviva.com/">Conviva</a> is a service for monitoring video playing experience on the Internet. The <a target="_blank" href="https://github.com/signalfx/integrations/tree/master/signalfx-agent">SignalFx Smart Agent</a> monitor called **conviva** was developed for Conviva integration. The conviva monitor can be configured to pull Real-time/Live Conviva metrics listed in the table below using the <a target="_blank" href="https://community.conviva.com/site/global/apis_data/experience_insights_api/index.gsp">Conviva Experience Insights REST APIs</a>. The Live Conviva metrics are converted to SignalFx metrics with dimensions of the names of the Conviva account and applied filter(s). MetricLens have an additional dimension called metric for identifying the metric of a MetricLens. Also, MetricLens dimensions are mapped one-to-one to SignalFx dimensions with their values derived from the values of the associated MetricLens dimension entities.
-
-|Metrics|
-|---------------|
-|attempts|
-|avg_bitrate|
-|concurrent_plays|
-|connection_induced_rebuffering_ratio|
-|connection_induced_rebuffering_ratio_timeseries|
-|duration connection_induced_rebuffering_ratio_distribution|
-|exits_before_video_start|
-|ended_plays|
-|ended_plays_timeseries|
-|plays|
-|play_bitrate_distribution|
-|play_buffering_ratio_distribution|
-|play_connection_induced_rebuffering_ratio_distribution|
-|quality_summary|
-|rebuffered_plays|
-|rebuffering_ratio|
-|top_assets_15_mins|
-|top_assets_summary|
-|video_playback_failures|
-|video_playback_failures_timeseries|
-|video_playback_failures_distribution|
-|video_restart_time|
-|video_restart_time_timeseries|
-|video_restart_time_distribution|
-|video_start_failures|
-|video_start_failures_errornames|
-|video_startup_time|
-
-|MetricLens|
-|----------|
-|audience_metriclens|
-|audience_metriclens_map|
-|quality_metriclens|
-|quality_metriclens_map|
+<a target="_blank" href="https://www.conviva.com/">Conviva</a> is a service for monitoring video playing experience on the Internet. The <a target="_blank" href="https://github.com/signalfx/integrations/tree/master/signalfx-agent">SignalFx Smart Agent</a> monitor called **conviva** was developed for Conviva integration. The conviva monitor can be configured to pull [Real-time/Live Conviva metrics](./docs/conviva_live_metrics.md) using the <a target="_blank" href="https://community.conviva.com/site/global/apis_data/experience_insights_api/index.gsp">Conviva Experience Insights REST APIs</a>. The Live Conviva metrics are converted to SignalFx metrics with dimensions for the name of the Conviva account and the name(s) of the applied filter(s). MetricLens metrics have an additional dimension called metric that identifies the metric of a MetricLens. Also, MetricLens dimensions are mapped one-to-one to SignalFx dimensions with their values derived from the values of the associated MetricLens dimension entities.
 
 ### REQUIREMENTS AND DEPENDENCIES
 
-Only Live Conviva metrics are supported. Conviva MetricLens metrics require MetricLens enabled filters. MetricLens enable filters have a checkmark in the `ML` column of the table <a target="_blank" href="https://pulse.conviva.com/filters/">here</a>.
+Only Live Conviva metrics are supported. Conviva MetricLens metrics require MetricLens enabled filters. MetricLens enable filters have a checkmark in the `ML` column of the table <a target="_blank" href="https://pulse.conviva.com/filters/">here</a>. Conviva Developer Community credentials are required to access this link.
 
 This monitor requires:
 
